@@ -76,3 +76,4 @@ which is a `RESTful` web service using `SpringBoot` and `JPA` for `MySQL`.
 - ["Introduction To Spring Data Rest - Quick Tutorial for Beginners"](https://www.springboottutorial.com/spring-boot-introduction-to-spring-data-rest) by "In28MINUTES"
 - ["HAL - Hypertext Application Language"](http://stateless.co/hal_specification.html) by Mike Kelly
 - ["Introduction to Spring Data REST"](https://www.baeldung.com/spring-data-rest-intro) by Baeldung
+- ["Accessing JPA Data with REST"](https://spring.io/guides/gs/accessing-data-rest) by Spring.io
