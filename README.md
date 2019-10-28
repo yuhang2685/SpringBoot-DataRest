@@ -29,7 +29,7 @@ However, when it comes to production applications, you need to think twice befor
 #### Overview of key points:
 - Dependency for `JPA` and `data-rest` are both needed;
 - The `@RepositoryRestResource` annotation is optional and is used to customize the REST endpoint. If we decided to omit it, Spring would automatically create an endpoint using the lower case of the class name, i.e., “/student”, instead of the user specified one.
-- In order to make `POST` work, it needs `@GeneratedValue(strategy=GenerationType.IDENTITY)`,
+- In order to make `POST` work, it needs `@GeneratedValue(strategy=GenerationType.AUTO)`,
   and the table must have the `primary key` "auto incremented";
 
 #### Testing REST API
@@ -41,11 +41,22 @@ In other words, `HAL format` is flexible and offers a convenient way to supply l
 Once you have the `Entity` and `RepositoryRestResource`, 
 you now have a fully-functional REST API,
 and you are ready to fire your requests:
-- you can send a POST request to a URL to create a resource;
-- you can go to the URL and see what resources are currently stored there; 
-- You can also access a specific item stored in the repository; 
-- You can search an item on the repository by typing in a query;
-- You can also do a search by directly invoking the repository method
+- you can send a POST request to a URL to create a resource:
+
+![screenshot](https://github.com/yuhang2685/SpringBoot-DataRest/blob/master/datarest-post.png)
+
+- you can go to the URL and see what resources are currently stored there:
+
+![screenshot](https://github.com/yuhang2685/SpringBoot-DataRest/blob/master/datarest-resourse.png)
+
+- You can also access a specific item stored in the repository:
+
+![screenshot](https://github.com/yuhang2685/SpringBoot-DataRest/blob/master/datarest-specificItem.png)
+
+- You can update or delete an item on the repository:
+
+![screenshot](https://github.com/yuhang2685/SpringBoot-DataRest/blob/master/datarest-update.png)
+
 
 
 #### Related Projects
