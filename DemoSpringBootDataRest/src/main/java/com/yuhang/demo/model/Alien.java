@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Alien {
 		// YH: @Id specifies the primary key
 		@Id
-		@GeneratedValue(strategy=GenerationType.IDENTITY) 
+		@GeneratedValue(strategy=GenerationType.AUTO) 
 		private int aid;
 		private String aname;
 		private int points;
